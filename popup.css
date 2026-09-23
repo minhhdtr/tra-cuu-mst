@@ -1,0 +1,267 @@
+:root {
+  color-scheme: light dark;
+
+  --giay: #ffffff;
+  --nen-phu: #f4f6f8;
+  --muc: #000000;
+  --chu: #363c44;
+  --mo: #6d7885;
+  --vien: #dde2e7;
+
+  --nut-nen: #0b5ca8;
+  --nut-chu: #ffffff;
+  --nhan: #0b5ca8;
+
+  --xanh-nen: #e6f2ec;
+  --xanh-chu: #15603f;
+  --do: #a4262c;
+
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --giay: #1c1f24;
+    --nen-phu: #262a30;
+    --muc: #f2f4f7;
+    --chu: #ced4db;
+    --mo: #949ea9;
+    --vien: #333941;
+
+    --nut-nen: #2d6cb0;
+    --nut-chu: #ffffff;
+    --nhan: #7fb6ee;
+
+    --xanh-nen: #1e3a2d;
+    --xanh-chu: #86d3aa;
+    --do: #f08a8a;
+  }
+}
+
+body {
+  width: 520px;
+  margin: 0;
+  background: var(--giay);
+  color: var(--chu);
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Ô tra cứu */
+
+#form-tra-cuu {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  gap: 8px;
+  padding: 12px 14px;
+  background: var(--giay);
+  border-bottom: 1px solid var(--vien);
+}
+
+#mst {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 11px;
+  border: 1px solid var(--vien);
+  border-radius: 7px;
+  background: var(--giay);
+  color: var(--muc);
+  font-family: var(--mono);
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+#mst:focus-visible,
+#nut-tra-cuu:focus-visible,
+#nut-sao-chep:focus-visible,
+#nut-xoa-lich-su:focus-visible,
+#lich-su button:focus-visible,
+#khung-json summary:focus-visible {
+  outline: 2px solid var(--nhan);
+  outline-offset: 1px;
+}
+
+#nut-tra-cuu {
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--nut-nen);
+  color: var(--nut-chu);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#nut-tra-cuu:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+#thong-bao {
+  margin: 0;
+  padding: 12px 14px;
+  font-size: 13.5px;
+  color: var(--mo);
+}
+
+#thong-bao.loi {
+  color: var(--do);
+}
+
+/* Kết quả */
+
+#ket-qua {
+  padding: 14px;
+}
+
+#ten-nnt {
+  margin: 0 0 5px;
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: var(--muc);
+}
+
+#hang-mst {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+#so-mst {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--muc);
+}
+
+.chip {
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--nen-phu);
+  color: var(--mo);
+  font-size: 12px;
+}
+
+.chip.hoat-dong {
+  background: var(--xanh-nen);
+  color: var(--xanh-chu);
+}
+
+#nut-sao-chep {
+  padding: 6px 12px;
+  border: 1px solid var(--vien);
+  border-radius: 6px;
+  background: none;
+  color: var(--chu);
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#nut-sao-chep:hover {
+  background: var(--nen-phu);
+}
+
+#khung-json {
+  margin-top: 12px;
+}
+
+#khung-json summary {
+  padding: 6px 0;
+  color: var(--mo);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#json {
+  margin: 4px 0 0;
+  padding: 10px 12px;
+  max-height: 260px;
+  overflow: auto;
+  border-radius: 7px;
+  background: var(--nen-phu);
+  color: var(--chu);
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Lịch sử */
+
+#khung-lich-su {
+  padding: 10px 0 8px;
+  border-top: 1px solid var(--vien);
+}
+
+.dau-muc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px 4px;
+}
+
+.dau-muc h2 {
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--mo);
+}
+
+#nut-xoa-lich-su {
+  padding: 2px 4px;
+  border: 0;
+  background: none;
+  color: var(--mo);
+  font-family: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+#nut-xoa-lich-su:hover {
+  color: var(--do);
+}
+
+#lich-su {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#lich-su button {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  width: 100%;
+  padding: 7px 14px;
+  border: 0;
+  background: none;
+  color: var(--chu);
+  font-family: inherit;
+  font-size: 13.5px;
+  text-align: left;
+  cursor: pointer;
+}
+
+#lich-su button:hover {
+  background: var(--nen-phu);
+}
+
+.ls-mst {
+  flex: none;
+  font-family: var(--mono);
+  color: var(--muc);
+}
+
+.ls-ten {
+  overflow: hidden;
+  color: var(--mo);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

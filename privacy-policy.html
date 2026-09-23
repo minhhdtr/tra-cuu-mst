@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chính sách quyền riêng tư – Tra cứu thông tin NNT</title>
+    <style>
+      body {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 32px 20px 64px;
+        font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        color: #2c323a;
+      }
+      h1 {
+        margin: 0 0 4px;
+        font-size: 24px;
+        color: #000;
+      }
+      h2 {
+        margin: 36px 0 8px;
+        font-size: 18px;
+        color: #000;
+      }
+      p,
+      li {
+        margin: 0 0 10px;
+      }
+      .ngay {
+        color: #6d7885;
+        font-size: 14px;
+      }
+      hr {
+        margin: 48px 0;
+        border: 0;
+        border-top: 1px solid #dde2e7;
+      }
+      code {
+        font-family: ui-monospace, Consolas, monospace;
+        font-size: 14px;
+        background: #f4f6f8;
+        padding: 1px 5px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chính sách quyền riêng tư</h1>
+    <p class="ngay">
+      Áp dụng cho tiện ích mở rộng "Tra cứu thông tin NNT". Cập nhật ngày 23/09/2026.
+    </p>
+
+    <h2>Tóm tắt</h2>
+    <p>
+      Tiện ích này không thu thập dữ liệu cá nhân của người dùng, không gửi dữ liệu về cho
+      nhà phát triển và không chia sẻ dữ liệu với bất kỳ bên thứ ba nào.
+    </p>
+
+    <h2>Dữ liệu được xử lý</h2>
+    <p>
+      Khi bạn nhập một mã số thuế và bấm Tra cứu, trình duyệt của bạn gửi mã số thuế đó
+      trực tiếp đến dịch vụ tra cứu công khai tại <code>hoadondientu.gdt.gov.vn</code> và
+      nhận về thông tin đăng ký thuế tương ứng. Không có máy chủ trung gian nào của nhà
+      phát triển tham gia vào quá trình này.
+    </p>
+
+    <h2>Dữ liệu lưu trên máy bạn</h2>
+    <p>
+      Tiện ích lưu 10 mã số thuế tra gần nhất cùng tên người nộp thuế tương ứng, bằng
+      <code>chrome.storage.local</code>, ngay trên thiết bị của bạn. Dữ liệu này chỉ dùng
+      để bạn tra lại nhanh, không được gửi đi bất kỳ đâu. Bạn có thể xóa bất cứ lúc nào
+      bằng nút Xóa trong phần "Tra gần đây", hoặc bằng cách gỡ tiện ích.
+    </p>
+
+    <h2>Những gì tiện ích không làm</h2>
+    <ul>
+      <li>Không thu thập thông tin cá nhân, tài khoản, email hay lịch sử duyệt web.</li>
+      <li>Không đọc và không thay đổi nội dung các trang web bạn truy cập.</li>
+      <li>Không dùng công cụ phân tích, quảng cáo hay theo dõi người dùng.</li>
+      <li>Không bán, cho thuê hay chuyển giao dữ liệu cho bên thứ ba.</li>
+    </ul>
+
+    <h2>Quyền truy cập được yêu cầu</h2>
+    <ul>
+      <li><code>storage</code>: lưu danh sách mã số thuế tra gần nhất trên máy bạn.</li>
+      <li>
+        <code>https://hoadondientu.gdt.gov.vn/*</code>: gọi một endpoint công khai, chỉ
+        đọc, để lấy thông tin đăng ký thuế theo mã số thuế bạn nhập.
+      </li>
+    </ul>
+
+    <h2>Thay đổi chính sách</h2>
+    <p>
+      Nếu chính sách này thay đổi, nội dung mới sẽ được đăng tại chính địa chỉ này kèm ngày
+      cập nhật.
+    </p>
+
+    <h2>Liên hệ</h2>
+    <p>[TÊN NHÀ PHÁT TRIỂN] – [EMAIL LIÊN HỆ]</p>
+
+    <hr />
+
+    <h1>Privacy Policy</h1>
+    <p class="ngay">
+      For the "Tra cứu thông tin NNT" browser extension. Last updated 23 September 2026.
+    </p>
+
+    <h2>Summary</h2>
+    <p>
+      This extension does not collect personal data, does not send any data to the
+      developer, and does not share data with third parties.
+    </p>
+
+    <h2>Data processed</h2>
+    <p>
+      When you enter a tax code and press the lookup button, your browser sends that tax
+      code directly to the public lookup service at <code>hoadondientu.gdt.gov.vn</code>
+      and receives the corresponding taxpayer registration information. No server operated
+      by the developer is involved.
+    </p>
+
+    <h2>Data stored on your device</h2>
+    <p>
+      The extension stores the 10 most recently looked up tax codes and their taxpayer
+      names using <code>chrome.storage.local</code>, on your device only. This is used
+      solely to repeat a lookup quickly and is never transmitted anywhere. You can clear it
+      at any time with the clear button in the recent list, or by removing the extension.
+    </p>
+
+    <h2>What the extension does not do</h2>
+    <ul>
+      <li>It does not collect personal information, accounts, email or browsing history.</li>
+      <li>It does not read or modify the content of pages you visit.</li>
+      <li>It contains no analytics, advertising or user tracking.</li>
+      <li>It does not sell, rent or transfer data to third parties.</li>
+    </ul>
+
+    <h2>Permissions requested</h2>
+    <ul>
+      <li><code>storage</code>: keeps the recent tax code list on your device.</li>
+      <li>
+        <code>https://hoadondientu.gdt.gov.vn/*</code>: calls one public, read-only
+        endpoint to retrieve taxpayer registration data for the tax code you enter.
+      </li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>
+      Any change to this policy will be published at this same address with an updated
+      date.
+    </p>
+
+    <h2>Contact</h2>
+    <p>[DEVELOPER NAME] – [CONTACT EMAIL]</p>
+  </body>
+</html>

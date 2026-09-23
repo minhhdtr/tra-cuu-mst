@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Tra cứu thông tin NNT",
+  "version": "1.0.0",
+  "description": "Tra cứu thông tin đăng ký thuế theo mã số thuế từ dữ liệu công khai của cơ quan thuế.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tra cứu mã số thuế (Alt+M)"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://hoadondientu.gdt.gov.vn/*"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+M" },
+      "description": "Mở ô tra cứu mã số thuế"
+    }
+  }
+}

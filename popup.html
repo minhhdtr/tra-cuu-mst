@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tra cứu mã số thuế</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <form id="form-tra-cuu" autocomplete="off">
+      <input
+        id="mst"
+        type="text"
+        placeholder="Nhập mã số thuế"
+        spellcheck="false"
+        autofocus
+      />
+      <button id="nut-tra-cuu" type="submit">Tra cứu</button>
+    </form>
+
+    <p id="thong-bao" hidden></p>
+
+    <section id="ket-qua" hidden>
+      <h1 id="ten-nnt"></h1>
+      <div id="hang-mst">
+        <span id="so-mst"></span>
+        <span id="chip-trang-thai" class="chip"></span>
+      </div>
+
+      <button id="nut-sao-chep" type="button">Sao chép JSON</button>
+
+      <details id="khung-json">
+        <summary>JSON gốc</summary>
+        <pre id="json"></pre>
+      </details>
+    </section>
+
+    <section id="khung-lich-su" hidden>
+      <div class="dau-muc">
+        <h2>Tra cứu gần đây</h2>
+        <button id="nut-xoa-lich-su" type="button">Xóa</button>
+      </div>
+      <ul id="lich-su"></ul>
+    </section>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
